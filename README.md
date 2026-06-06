@@ -14,50 +14,21 @@ This repository is set up so that GitHub Pages can publish it as a website.
 2. Because the repo name is `iamatultripathi.github.io`, GitHub Pages will publish it automatically from `main`.
 3. Visit `https://iamatultripathi.github.io` after a few minutes.
 
-## Next steps for backend and database
-This site is now ready for Firebase backend integration.
+## Backend and form delivery
+This site now uses FormSubmit.co to deliver contact form submissions to your email address. No Firebase account is required for email delivery.
 
-### What Firebase gives you
-- A dashboard for your form responses and student requests
-- A database to save contact and student data
-- A backend without writing a server
+If you want a dashboard and database later, you can still set up Firebase and I can connect it.
 
-### Setup Firebase
-1. Open `https://console.firebase.google.com`
-2. Sign in with a Google account
-3. Create a new project, for example `us-academy-institute`
-4. Add a Web app to the project
-5. Copy the Firebase configuration and replace the placeholder values in `script.js`
-
-Your Firebase config will look like this:
-```js
-const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.appspot.com",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
-};
-```
-
-### Dashboard page
-- The site includes `dashboard.html`
-- After Firebase setup, open `https://iamatultripathi.github.io/dashboard.html`
-- You will see saved requests from the contact form
+### FormSubmit (email delivery)
+- Form submissions are sent to `brahmanatul10@gmail.com` using FormSubmit.co
+- After a visitor submits the form they will be redirected back to the site with a confirmation message
 
 ### Publish after setup
-1. Save your changes to `script.js`
+1. Save any changes you make
 2. Commit them in VS Code
 3. Push to GitHub
 4. Open `https://iamatultripathi.github.io`
 
-### View data in Firebase
-- In Firebase console, open your project
-- Click `Firestore Database`
-- View the `requests` collection
-
-### Payments and complete dashboard
-- Firebase handles student requests and contact data
-- Payment integration can be added later with Stripe or PayPal
-- Your Firebase console acts as the dashboard for incoming data
+### Next steps (optional)
+- Add Firebase later for a stored dashboard
+- Add Stripe or PayPal later for payments

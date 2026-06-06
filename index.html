@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>US Academy Institute</title>
     <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -82,7 +82,11 @@
         <div class="container">
           <h2>Contact Us</h2>
           <p>Send us a message to learn more about enrollment, schedules, and pricing.</p>
-          <form class="contact-form" action="#" method="post">
+          <form class="contact-form" action="https://formsubmit.co/brahmanatul10@gmail.com" method="POST">
+            <!-- FormSubmit.co integration: sends form submissions to brahmanatul10@gmail.com -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New request from US Academy Institute website">
+            <input type="hidden" name="_next" value="https://iamatultripathi.github.io/?submitted=true">
             <label>
               Your name
               <input type="text" name="name" placeholder="Enter your name" required />
