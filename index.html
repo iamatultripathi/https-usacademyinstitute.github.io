@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>US Academy Institute</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home">US Academy Institute</a>
+        <nav class="site-nav">
+          <a href="#about">About</a>
+          <a href="#courses">Courses</a>
+          <a href="#contact">Contact</a>
+          <a href="dashboard.html">Dashboard</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-inner">
+          <h1>Welcome to US Academy Institute</h1>
+          <p>
+            Professional training for students and professionals in business, IT,
+            design, and career development.
+          </p>
+          <a class="button" href="#courses">Explore Courses</a>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container">
+          <h2>About Us</h2>
+          <p>
+            US Academy Institute helps learners build skills for real work and
+            modern careers. Our courses are designed for students, new graduates,
+            and professionals who want practical training that can be used right
+            away.
+          </p>
+          <div class="cards">
+            <article class="card">
+              <h3>Expert Trainers</h3>
+              <p>Learn from instructors with real experience and industry knowledge.</p>
+            </article>
+            <article class="card">
+              <h3>Flexible Learning</h3>
+              <p>Online and offline classes with flexible schedules for busy learners.</p>
+            </article>
+            <article class="card">
+              <h3>Modern Curriculum</h3>
+              <p>Updated modules to keep pace with digital skills and career trends.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section courses" id="courses">
+        <div class="container">
+          <h2>Our Courses</h2>
+          <div class="grid">
+            <article class="course-card">
+              <h3>Web Development</h3>
+              <p>HTML, CSS, JavaScript, and modern front-end frameworks.</p>
+            </article>
+            <article class="course-card">
+              <h3>Business Skills</h3>
+              <p>Professional communication, project planning, and leadership training.</p>
+            </article>
+            <article class="course-card">
+              <h3>Digital Marketing</h3>
+              <p>SEO, social media, content creation, and brand growth strategies.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <p>Send us a message to learn more about enrollment, schedules, and pricing.</p>
+          <form class="contact-form" action="#" method="post">
+            <label>
+              Your name
+              <input type="text" name="name" placeholder="Enter your name" required />
+            </label>
+            <label>
+              Email address
+              <input type="email" name="email" placeholder="Enter your email" required />
+            </label>
+            <label>
+              Course or request
+              <input type="text" name="course" placeholder="What do you want to learn?" />
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Tell us what you need"></textarea>
+            </label>
+            <button type="submit">Send Request</button>
+            <p class="form-status" id="form-status"></p>
+          </form>
+          <p class="form-note">
+            Note: This form can save data to Firebase once you configure it.
+            Firebase is your dashboard for incoming student requests.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>&copy; 2026 US Academy Institute. Built for learning and growth.</p>
+      </div>
+    </footer>
+  </body>
+</html>
